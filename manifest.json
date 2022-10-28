@@ -1,0 +1,32 @@
+{
+  "name": "Apple Music Player",
+  "description": "Apple Music插件",
+  "version": "1.0",
+  "manifest_version": 3,
+  "host_permissions": [
+    "https://music.apple.com/*"
+  ],
+  "background": {
+    "service_worker": "js/background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://music.apple.com/*"
+      ],
+      "js": [
+        "js/content.js"
+      ]
+    }
+  ],
+  "action": {
+    "default_title": "返回当前播放 Apple Music 歌曲的详细信息",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "activeTab",
+    "storage",
+    "tabs",
+    "webRequest"
+  ]
+}

@@ -1,0 +1,75 @@
+html, body {
+    padding:0;
+    margin:0;
+}
+
+
+.apple-music-player {
+    position: relative;
+    width: 400px;
+    height: 150px;
+    overflow: hidden;
+    font-size: 14px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.apple-music-player::before {
+    content: '';
+    position: absolute;
+    width: 400px;
+    height: 150px;
+    overflow: hidden;
+    font-size: 14px;
+    z-index: -1;
+    -webkit-filter: blur(3px);
+    -moz-filter: blur(3px);
+    -o-filter: blur(3px);
+    -ms-filter: blur(3px);
+    filter: blur(3px);
+}
+
+.apple-music-player .song {
+    height: 100%;
+    width: 250px;
+    float: left;
+}
+
+.apple-music-player .song .apple-music-player-info {
+    height: 75%;
+    padding: 0px 10px;
+}
+
+.apple-music-player .song .apple-music-player-info .album-name {
+    height: 50%;
+    font-size: 14px;
+}
+
+.apple-music-player .song .apple-music-player-info .song-name {
+    height: 25%;
+    font-size: 14px;
+}
+
+.apple-music-player .song .apple-music-player-info .singer-name {
+    height: 25%;
+    font-size: 14px;
+}
+
+.apple-music-player .song .apple-music-player-control .play-prev, .play-control, .play-next{
+    height: 32px;
+    width: 32px;
+    float: left;
+}
+
+.apple-music-player .song .apple-music-player-control button{
+    border-color: transparent;
+    background-color: transparent;
+    height: 32px;
+    width: 32px;
+}
+
+
+.apple-music-player .song-pic {
+    float: right;
+    height: 100%;
+    text-align: center;
+}
