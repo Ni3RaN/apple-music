@@ -36,12 +36,13 @@ html, body {
 
 .apple-music-player .song .apple-music-player-info {
     height: 75%;
-    padding: 0px 10px;
+    padding: 0 10px;
 }
 
 .apple-music-player .song .apple-music-player-info .album-name {
     height: 50%;
     font-size: 14px;
+    margin-top: 5px;
 }
 
 .apple-music-player .song .apple-music-player-info .song-name {
